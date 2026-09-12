@@ -1,0 +1,25 @@
+generated: '2026-09-12'
+method: searched
+source: >-
+  https://www.afterquery.com/sitemap.xml (HTTP 200, lists every public page and contains no pricing
+  page), https://www.afterquery.com/pricing (HTTP 404), https://www.afterquery.com/products
+  (HTTP 200), https://www.afterquery.com/solutions (HTTP 200) and
+  https://www.afterquery.com/contact (HTTP 200).
+plan_count: 0
+currency: null
+note: >-
+  AfterQuery publishes no plans, tiers or prices of any kind. There is no /pricing page - the URL
+  404s and the sitemap does not list one - and the products and solutions pages route every
+  engagement through a contact form. Work is sold as bespoke data, evaluation and RL-environment
+  engagements to foundation-model labs and enterprises, so an honest zero here is the finding, not
+  a gap in the search.
+sales_motion: contact-sales
+contact: https://www.afterquery.com/contact
+plans: []
+adjacent:
+  note: >-
+    The one published money surface AfterQuery operates is on the supply side, not the buy side:
+    AfterQuery Experts contributors are paid weekly via Stripe on a Monday-Sunday work week with a
+    seven-day hold on the first payout, per
+    https://docs.afterquery.com/articles/payments-taxes/payment-setup. That is contributor
+    compensation, not a customer plan, and is recorded here only so it is not mistaken for pricing.

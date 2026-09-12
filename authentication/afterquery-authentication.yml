@@ -1,0 +1,36 @@
+generated: '2026-09-12'
+method: probed
+source: >-
+  https://docs.afterquery.com/.well-known/mcp.json (HTTP 200, declares authentication "none") and an
+  anonymous POST tools/list to https://docs.afterquery.com/mcp (HTTP 200, full tool set returned
+  with no credential), both on 2026-09-12.
+note: >-
+  There is no API key, OAuth client or token of any kind to obtain from AfterQuery, because there is
+  no public product API. The only callable surface is the documentation MCP server, and it is
+  anonymous by declaration and by observation. This artifact records that measured fact so the
+  record is not read as "auth unknown".
+schemes:
+- id: none
+  type: none
+  surface: https://docs.afterquery.com/mcp
+  required: false
+  evidence:
+    declared: 'https://docs.afterquery.com/.well-known/mcp.json -> servers[0].authentication: none'
+    observed: anonymous tools/list returned HTTP 200 with three tools
+    checked: '2026-09-12'
+oauth:
+  supported: false
+  authorization_server_metadata: 'https://docs.afterquery.com/.well-known/oauth-authorization-server - HTTP 404'
+  protected_resource_metadata: 'https://docs.afterquery.com/.well-known/oauth-protected-resource - HTTP 404'
+  openid_configuration: 'https://www.afterquery.com/.well-known/openid-configuration - HTTP 404'
+scopes:
+  applicable: false
+  note: No OAuth surface exists, so scopes/ is intentionally absent rather than empty.
+human_login:
+  surface: https://experts.afterquery.com/
+  note: >-
+    The AfterQuery Experts contributor platform has a human sign-in and an onboarding flow with
+    identity verification via Persona and payouts via Stripe (documented at
+    https://docs.afterquery.com/articles/onboarding/complete-your-onboarding). It is a web
+    application login, not a programmatic authentication surface, and it was not probed further -
+    the host answers 429 with a Vercel Security Checkpoint to non-browser clients.

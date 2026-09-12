@@ -1,0 +1,28 @@
+generated: '2026-09-12'
+method: probed
+source: >-
+  Live observation of https://docs.afterquery.com/mcp (the only callable AfterQuery surface),
+  plus a read of the whole published documentation set via the MCP filesystem tool, which contains
+  no rate-limit page.
+limit_count: 0
+note: >-
+  No rate limits are published anywhere. AfterQuery has no API reference to state them in, and the
+  one callable surface - the documentation MCP server - returned no RateLimit-* or X-RateLimit-*
+  headers and no Retry-After on an anonymous tools/list. Recorded as an honest zero.
+headers_observed: []
+status_on_exhaustion: null
+limits: []
+x-observed:
+- surface: https://docs.afterquery.com/mcp
+  method: POST
+  http_status: 200
+  rate_limit_headers: none
+  checked: '2026-09-12'
+- surface: https://experts.afterquery.com/
+  method: GET
+  http_status: 429
+  checked: '2026-09-12'
+  note: >-
+    A 429 that is NOT a rate limit in the API sense - the body is a Vercel Security Checkpoint bot
+    challenge served to every non-browser client, not an exhausted quota. Recorded so the status
+    code is not read as a published limit.

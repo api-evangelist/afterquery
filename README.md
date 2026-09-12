@@ -64,5 +64,20 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AfterQuery is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/afterquery_stock/
+AfterQuery is a San Francisco applied research lab that curates expert reasoning data for frontier
+foundation models — supervised fine-tuning sets, rubric- and verifier-based reinforcement-learning
+environments, tool-calling and computer-use environments, RLHF, deep research tasks, multimodal
+data, and custom evaluation suites — produced with a network of verified professionals in finance,
+healthcare, law and software engineering through its AfterQuery Experts contributor platform.
+
+**API surface.** AfterQuery publishes no product API: there is no developer portal, no OpenAPI, no
+GraphQL endpoint and no SDK on any package registry. The one machine-callable surface it serves is
+an anonymous read-only documentation MCP server on its help-centre host, alongside an A2A agent
+card, one published agent skill and two `llms.txt` files. Everything in this repository was probed
+on 2026-09-12 and each artifact records the URL and HTTP status it came from.
+
+- Website: https://www.afterquery.com/
+- Documentation (AfterQuery Experts Help Center): https://docs.afterquery.com/
+- MCP endpoint: https://docs.afterquery.com/mcp
+- GitHub organization: https://github.com/AfterQuery
+- Secondary-market listing this record was harvested from: https://forgeglobal.com/afterquery_stock/

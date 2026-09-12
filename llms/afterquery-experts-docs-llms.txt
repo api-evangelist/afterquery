@@ -1,0 +1,14 @@
+# AfterQuery Experts Help Center
+
+- [AfterQuery Experts Help Center](https://docs.afterquery.com/index.md): Get help with onboarding and working
+- [Payments](https://docs.afterquery.com/articles/payments-taxes/payment-setup.md)
+- [Tax Compliance Guide](https://docs.afterquery.com/articles/payments-taxes/tax-compliance.md): Understanding tax obligations for data annotation work
+- [Payment Countries](https://docs.afterquery.com/articles/payments-taxes/payment-countries.md)
+- [Assessments](https://docs.afterquery.com/articles/onboarding/assessments.md)
+- [Complete your onboarding](https://docs.afterquery.com/articles/onboarding/complete-your-onboarding.md): The four onboarding steps on AfterQuery Experts: signing your legal documents, verifying your phone and identity, and connecting Stripe so you can be paid.
+- [Who We Are](https://docs.afterquery.com/articles/about/who-we-are.md): Learn about AfterQuery Experts and our mission in AI training
+- [Contract Work Details](https://docs.afterquery.com/articles/about/contract-work.md): Understanding the contract-based nature of our work relationship
+- [AI Training Focus](https://docs.afterquery.com/articles/about/ai-training.md): How your work contributes to AI model training and development
+- [Work Guidelines](https://docs.afterquery.com/articles/about/work-guidelines.md): Best practices and standards for AI training data annotation
+- [Data Policy and Privacy](https://docs.afterquery.com/articles/data-policy.md): Learn about how AfterQuery Experts handles your personal and professional data, including retention policies and deletion procedures.
+- [Report a Bug](https://docs.afterquery.com/report-a-bug.md)

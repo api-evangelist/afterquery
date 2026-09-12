@@ -1,0 +1,54 @@
+# AfterQuery
+
+> AfterQuery is an applied research lab curating data solutions to accelerate foundation model development.
+
+AfterQuery works with domain experts to create training data, evaluation datasets, and reinforcement-learning environments that capture how professionals reason, decide, and use software.
+
+## Company and offerings
+
+- [Homepage](https://www.afterquery.com/): Official overview of AfterQuery and its approach to expert-curated AI training data.
+- [Products](https://www.afterquery.com/products): Rubric- and verifier-based reinforcement learning, tool-calling environments, supervised fine-tuning, computer-use environments, RLHF, code generation, deep research, multimodal data, and custom evaluations.
+- [Enterprise solutions](https://www.afterquery.com/solutions): Custom datasets, vertical-specific AI consulting, agent deployment, and simulation or reinforcement-learning environments.
+- [Contact](https://www.afterquery.com/contact): Contact AfterQuery about data and research partnerships.
+
+## Research and benchmarks
+
+- [Research and blog](https://www.afterquery.com/research): AfterQuery research, benchmark work, and technical articles.
+- [Leaderboards](https://www.afterquery.com/leaderboard): AfterQuery benchmark leaderboards.
+- [IDE-Bench](https://www.afterquery.com/leaderboard/ide-bench): Evaluation of AI agents on end-to-end software engineering tasks.
+- [Market-Bench](https://www.afterquery.com/leaderboard/market-bench): Evaluation of language models on introductory quantitative trading.
+- [App-Bench](https://www.afterquery.com/leaderboard/app-bench): Evaluation of coding agents on economically useful web-app generation.
+- [FinanceArena](https://www.afterquery.com/leaderboard/finance-arena): Evaluation of assumption-based financial analysis.
+- [How AfterQuery helped NVIDIA hill-climb GDPval](https://www.afterquery.com/blog/how-afterquery-helped-nvidia-hill-climb-gdpval)
+- [On-policy distillation for GDPval](https://www.afterquery.com/blog/on-policy-distillation-gdpval)
+- [Why DeployCo and ServiceCo are betting on the last mile](https://www.afterquery.com/blog/deployco)
+- [Solving the last mile problem with The Raine Group](https://www.afterquery.com/blog/solving-the-last-mile-problem-in-partnership-with-the-raine-group)
+- [Human expertise, reimagined](https://www.afterquery.com/blog/human-expertise-reimagined)
+- [Expert data and model performance on tau-squared bench](https://www.afterquery.com/blog/how-afterquery-expert-data-drives-model-performance-on-t2-bench)
+- [Improving Terminal-Bench 2.0 with Tinker and Harbor](https://www.afterquery.com/blog/how-we-improved-terminal-bench-2-with-tinker-and-harbor)
+- [The AfterQuery thesis](https://www.afterquery.com/blog/the-afterquery-thesis)
+
+## Educational resources
+
+- [AI training data knowledge base](https://www.afterquery.com/knowledge)
+- [Training data for machine learning](https://www.afterquery.com/knowledge/what-is-training-data-for-machine-learning)
+- [What happens during model pre-training](https://www.afterquery.com/knowledge/what-happens-during-model-pre-training)
+- [The role of human data in training AI models](https://www.afterquery.com/knowledge/the-role-of-human-data-in-training-ai-models)
+- [Dataset curation for machine learning](https://www.afterquery.com/knowledge/dataset-curation-for-machine-learning)
+- [Supervised fine-tuning](https://www.afterquery.com/knowledge/supervised-fine-tuning-sft-how-models-learn-from-demonstrations)
+- [Preference training](https://www.afterquery.com/knowledge/preference-training-how-models-learn-what-humans-want)
+- [Expert data as the bottleneck in AI training](https://www.afterquery.com/knowledge/expert-data-as-the-bottleneck-in-ai-training)
+- [Evaluation dataset design for frontier models](https://www.afterquery.com/knowledge/evaluation-dataset-design-for-frontier-models)
+
+## Company links
+
+- [Careers](https://www.afterquery.com/careers)
+- [LinkedIn](https://www.linkedin.com/company/afterquery)
+- [X](https://x.com/afterquery)
+
+## Canonical and policy information
+
+- Canonical website: https://www.afterquery.com/
+- Sitemap: https://www.afterquery.com/sitemap.xml
+- [Privacy policy](https://www.afterquery.com/privacy)
+- [Terms of service](https://www.afterquery.com/terms)

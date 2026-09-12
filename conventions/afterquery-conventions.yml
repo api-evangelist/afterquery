@@ -1,0 +1,96 @@
+generated: '2026-09-12'
+method: probed
+source: >-
+  Derived from the live MCP surface at https://docs.afterquery.com/mcp (tools/list, HTTP 200,
+  saved verbatim at mcp/afterquery-mcp-tools.json), its discovery document
+  https://docs.afterquery.com/.well-known/mcp.json, and the agent card at
+  https://docs.afterquery.com/.well-known/agent-card.json.
+sources:
+- https://docs.afterquery.com/mcp
+- https://docs.afterquery.com/.well-known/mcp.json
+- https://docs.afterquery.com/.well-known/agent-card.json
+- https://www.afterquery.com/llms.txt
+scope_note: >-
+  AfterQuery publishes no REST or GraphQL API, so these conventions describe the ONE callable
+  surface it does serve: a read-only documentation MCP server. There is no versioning scheme, no
+  pagination, no error envelope and no rate-limit signalling to document beyond what MCP itself
+  defines, and saying so is the finding.
+auth:
+  style: none
+  detail: authentication/afterquery-authentication.yml
+  boundary: >-
+    The MCP endpoint is anonymous: /.well-known/mcp.json declares authentication "none" and an
+    unauthenticated tools/list returns the full tool set. No API keys exist because no API exists;
+    the AfterQuery Experts contributor platform behind experts.afterquery.com is a human web login,
+    not a programmatic surface.
+protocol:
+  style: json-rpc-2.0 over MCP streamable-http
+  transport: 'HTTP POST with Accept: application/json, text/event-stream'
+  responses: 'server-sent events framing (event: message / data: <json-rpc>)'
+idempotency:
+  coverage: none
+  supported: false
+  header: null
+  scope: null
+  retention: null
+  note: >-
+    No idempotency mechanism exists and none is needed for the two read tools, which the server
+    itself annotates readOnlyHint true / idempotentHint true. The single write-shaped tool,
+    submit_feedback, is annotated idempotentHint FALSE and openWorldHint TRUE - calling it twice
+    files two documentation reports. Coverage is recorded as `none` rather than `na` because that
+    one non-idempotent tool is real and carries no replay protection, however low-consequence it is.
+dry_run_mode:
+  supported: false
+  note: No dry-run, preview or validate-only mode is offered on any tool.
+reversibility:
+  state: documented
+  grade_basis: >-
+    There is exactly one write surface (submit_feedback) and no reversal operation for it - no
+    delete, withdraw or amend tool is advertised, and no window is stated anywhere. This is graded
+    `documented` only in the sense that the write surface and the absence of a reversal are both
+    recorded from the live manifest; no window is asserted because AfterQuery states none.
+  write_surfaces:
+  - operation: submit_feedback
+    surface: https://docs.afterquery.com/mcp
+    consequence: files a documentation problem report with the AfterQuery docs team
+    reversal: null
+    window: null
+    note: >-
+      No reversal path is published. The docs team receives the report; an agent cannot retract it
+      through the protocol.
+  read_only_surfaces:
+  - search_after_query_experts_help_center
+  - query_docs_filesystem_after_query_experts_help_center
+pagination:
+  style: none
+  note: >-
+    Neither read tool exposes a cursor, offset or limit parameter. search takes only `query`; the
+    filesystem tool takes only `command`, and callers bound their own output with head/tail inside
+    that command string.
+versioning:
+  style: none
+  api_version: null
+  note: >-
+    No API version is declared. /.well-known/mcp.json carries a document `version` of 1.0.0 and the
+    agent card a `version` of 1.0.0 with protocolVersion 0.3; neither versions a contract that
+    consumers could pin.
+errors:
+  envelope: JSON-RPC 2.0 error object
+  problem_json: false
+  catalog: null
+  note: >-
+    No error reference is published. Errors surface as protocol-level JSON-RPC errors; there is no
+    documented, enumerable error code registry, so errors/ is intentionally absent from this repo
+    rather than fabricated.
+rate_limit_signalling:
+  headers: none
+  detail: rate-limits/afterquery-rate-limits.yml
+request_tracing:
+  request_id_header: none observed
+metadata_and_expansion:
+  supported: false
+statefulness:
+  note: >-
+    The filesystem tool is explicitly STATELESS per its own description - the working directory
+    resets to / on every call and no shell variables, aliases or history carry over - which an
+    agent must account for by chaining commands or using absolute paths in a single call.

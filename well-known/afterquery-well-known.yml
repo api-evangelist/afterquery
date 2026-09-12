@@ -1,0 +1,88 @@
+generated: '2026-09-12'
+method: probed
+source: >-
+  Live unauthenticated GET of the named /.well-known/ paths across every host this record knows -
+  afterquery.com, www.afterquery.com, docs.afterquery.com, experts.afterquery.com,
+  api.afterquery.com and appbench.ai - on 2026-09-12.
+note: >-
+  AfterQuery serves no RFC 9116 security.txt, no RFC 9727 api-catalog, no OpenID Connect or OAuth
+  metadata on any host. What it does serve, all from the documentation host docs.afterquery.com, is
+  an A2A agent card, a Mintlify MCP discovery document (/.well-known/mcp.json) and the agent-skill
+  markdown the card points at - three real 200s carrying real documents. The apex 308s to www, so
+  its /.well-known/ results are recorded as the redirect they are rather than as a separate set of
+  404s. experts.afterquery.com answers 429 with a Vercel Security Checkpoint interstitial to every
+  non-browser client, so its /.well-known/ surface could not be read; that is a wall this probe hit,
+  not a statement about what the host serves.
+hosts:
+- host: www.afterquery.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: afterquery.com
+  documents:
+  - {path: /.well-known/security.txt, status: 308, note: 'redirects to www.afterquery.com'}
+  - {path: /.well-known/openid-configuration, status: 308, note: 'redirects to www.afterquery.com'}
+  - {path: /.well-known/oauth-authorization-server, status: 308, note: 'redirects to www.afterquery.com'}
+  - {path: /.well-known/api-catalog, status: 308, note: 'redirects to www.afterquery.com'}
+  - {path: /.well-known/ai-plugin.json, status: 308, note: 'redirects to www.afterquery.com'}
+  - {path: /.well-known/agent-card.json, status: 308, note: 'redirects to www.afterquery.com'}
+  - {path: /.well-known/agent.json, status: 308, note: 'redirects to www.afterquery.com'}
+- host: docs.afterquery.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 200
+    content_type: application/json
+    file: ../a2a/afterquery-agent-card.json
+  - path: /.well-known/mcp.json
+    status: 200
+    content_type: application/json
+    file: afterquery-docs-mcp.json
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  extras:
+  - path: /.well-known/agent-skills/afterqueryexperts/skill.md
+    status: 200
+    content_type: text/markdown
+    file: ../skills/afterquery-experts-support.md
+    note: The agent-skill document the agent card's single skill points at; saved verbatim under skills/.
+- host: experts.afterquery.com
+  documents:
+  - {path: /.well-known/security.txt, status: 429, note: 'Vercel Security Checkpoint interstitial - bot challenge, not a document'}
+  - {path: /.well-known/openid-configuration, status: 429, note: 'Vercel Security Checkpoint interstitial'}
+  - {path: /.well-known/oauth-authorization-server, status: 429, note: 'Vercel Security Checkpoint interstitial'}
+  - {path: /.well-known/api-catalog, status: 429, note: 'Vercel Security Checkpoint interstitial'}
+  - {path: /.well-known/ai-plugin.json, status: 429, note: 'Vercel Security Checkpoint interstitial'}
+  - {path: /.well-known/agent-card.json, status: 429, note: 'Vercel Security Checkpoint interstitial'}
+  - {path: /.well-known/agent.json, status: 429, note: 'Vercel Security Checkpoint interstitial'}
+- host: api.afterquery.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404, note: 'host resolves but Vercel answers DEPLOYMENT_NOT_FOUND on every path'}
+  - {path: /.well-known/openid-configuration, status: 404, note: 'DEPLOYMENT_NOT_FOUND'}
+  - {path: /.well-known/oauth-authorization-server, status: 404, note: 'DEPLOYMENT_NOT_FOUND'}
+  - {path: /.well-known/api-catalog, status: 404, note: 'DEPLOYMENT_NOT_FOUND'}
+  - {path: /.well-known/ai-plugin.json, status: 404, note: 'DEPLOYMENT_NOT_FOUND'}
+  - {path: /.well-known/agent-card.json, status: 404, note: 'DEPLOYMENT_NOT_FOUND'}
+  - {path: /.well-known/agent.json, status: 404, note: 'DEPLOYMENT_NOT_FOUND'}
+- host: appbench.ai
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  note: >-
+    appbench.ai is an AfterQuery benchmark property (App-Bench, linked from
+    www.afterquery.com/leaderboard/app-bench and documented in the AfterQuery/appbench.ai-docs
+    repository); probed for completeness, serves nothing at /.well-known/.

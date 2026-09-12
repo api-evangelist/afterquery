@@ -1,0 +1,27 @@
+generated: '2026-09-12'
+method: searched
+source: >-
+  https://docs.afterquery.com/.well-known/agent-skills/afterqueryexperts/skill.md (HTTP 200),
+  discovered from the skills[] array of AfterQuery's A2A agent card at
+  https://docs.afterquery.com/.well-known/agent-card.json.
+note: >-
+  Nothing in this directory was authored by API Evangelist. The single skill is served by
+  AfterQuery from its own documentation host and is saved verbatim. It is a Mintlify-generated
+  support skill for the AfterQuery Experts contributor platform - onboarding, payments, work
+  guidelines, troubleshooting - not an API-operating skill, because AfterQuery publishes no API to
+  ground one in.
+skills:
+- id: afterqueryexperts
+  file: afterquery-experts-support.md
+  name: Afterqueryexperts
+  description: >-
+    Use when helping contributors understand contract work, complete onboarding, manage payments,
+    follow work guidelines, and troubleshoot platform issues on AfterQuery Experts.
+  api: null
+  api_note: No API. The skill operates against the AfterQuery Experts web platform and its help centre.
+  method: searched
+  source: https://docs.afterquery.com/.well-known/agent-skills/afterqueryexperts/skill.md
+  http_status: 200
+  fetched: '2026-09-12'
+  author: provider
+  generator: Mintlify (declared in the file's own frontmatter as metadata.mintlify-proj afterqueryexperts)

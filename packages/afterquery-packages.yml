@@ -1,0 +1,74 @@
+generated: '2026-09-12'
+method: searched
+source: >-
+  Registry metadata endpoints (registry.npmjs.org, pypi.org/pypi/<pkg>/json) queried directly on
+  2026-09-12, plus the full public repository list of the AfterQuery GitHub organization via
+  https://api.github.com/orgs/AfterQuery/repos and www.afterquery.com/llms.txt.
+package_count: 0
+official_package_count: 0
+note: >-
+  AfterQuery publishes no first-party client library on any registry. There is no API for an SDK to
+  wrap: the company sells datasets, evaluation suites and RL environments as a service, and its
+  public site names no developer program. The searches below are recorded so a later round does not
+  repeat them.
+searched:
+- registry: pypi
+  query: afterquery
+  url: https://pypi.org/pypi/afterquery/json
+  status: 404
+- registry: pypi
+  query: harbor-aq
+  url: https://pypi.org/pypi/harbor-aq/json
+  status: 404
+- registry: npm
+  query: afterquery
+  url: https://registry.npmjs.org/afterquery
+  status: 404
+- registry: npm
+  query: '@afterquery/sdk'
+  url: https://registry.npmjs.org/@afterquery%2Fsdk
+  status: 404
+not_first_party:
+- name: harbor
+  registry: pypi
+  version: 0.23.0
+  published: null
+  official: false
+  url: https://pypi.org/project/harbor/
+  why_excluded: >-
+    `pip install harbor` is the agent-evaluation framework AfterQuery uses and contributes to, and
+    AfterQuery/harbor is a GitHub FORK (fork=true) of the upstream project. The PyPI package is
+    authored by Alex Shaw (alexgshaw64@gmail.com), the Terminal-Bench maintainer, not by
+    AfterQuery. Recorded here so a later round does not mistake it for an AfterQuery SDK. The
+    `published` date is null because the registry metadata endpoint returns no per-release date on
+    the info block and no AfterQuery release exists to date.
+- name: mcp-atlas
+  registry: github
+  version: null
+  published: null
+  official: false
+  url: https://github.com/AfterQuery/mcp-atlas
+  why_excluded: >-
+    A fork of scaleapi/mcp-atlas (its own README clones git@github.com:scaleapi/mcp-atlas.git and
+    pulls ghcr.io/scaleapi/mcp-atlas images). Scale AI's benchmark, not an AfterQuery MCP server.
+- name: SkyRL / verl / RL
+  registry: github
+  version: null
+  published: null
+  official: false
+  url: https://github.com/AfterQuery
+  why_excluded: >-
+    All three are GitHub forks (fork=true) of upstream RL frameworks - SkyRL, volcengine verl and
+    NVIDIA NeMo RL - carried in the AfterQuery org for internal work. Not AfterQuery software.
+first_party_repositories:
+  note: >-
+    AfterQuery's genuinely first-party public repositories (fork=false) are research and benchmark
+    code, not distributable client libraries, and none is published to a package registry.
+  repositories:
+  - {name: IDE-Bench, url: 'https://github.com/AfterQuery/IDE-Bench', kind: benchmark}
+  - {name: FinanceQA, url: 'https://github.com/AfterQuery/FinanceQA', kind: benchmark}
+  - {name: mle-reasoning-environment, url: 'https://github.com/AfterQuery/mle-reasoning-environment', kind: environment}
+  - {name: appbench.ai-docs, url: 'https://github.com/AfterQuery/appbench.ai-docs', kind: documentation}
+  - {name: anvil, url: 'https://github.com/AfterQuery/anvil', kind: internal-tooling}
+  - {name: swift-anvil, url: 'https://github.com/AfterQuery/swift-anvil', kind: internal-tooling}
+  - {name: vader, url: 'https://github.com/AfterQuery/vader', kind: internal-tooling}
