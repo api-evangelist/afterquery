@@ -21,6 +21,18 @@ modified: '2026-09-12'
 tags:
 - Company
 - Artificial Intelligence
+- Machine-Learning
+- Training Data
+- Data
+- Evaluations
+- Reinforcement Learning
+- Benchmarks
+- Research
+- Agents
+- MCP
+tags_raw:
+- Company
+- Artificial Intelligence
 - Machine Learning
 - Training Data
 - Data
@@ -44,6 +56,10 @@ apis:
   baseURL: https://docs.afterquery.com/mcp
   image: https://www.afterquery.com/og-default.png
   tags:
+  - MCP
+  - Documentation
+  - Agents
+  tags_raw:
   - Model Context Protocol
   - Documentation
   - Agents
@@ -105,6 +121,8 @@ common:
   url: rate-limits/afterquery-rate-limits.yml
 - type: Packages
   url: packages/afterquery-packages.yml
+- type: Contact
+  url: mailto:sales@afterquery.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
