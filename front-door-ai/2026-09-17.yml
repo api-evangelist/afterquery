@@ -1,0 +1,30 @@
+# Front Door AI Index — afterquery — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: afterquery
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.afterquery.com
+  final_host: www.afterquery.com
+  ownership: own
+  owner: afterquery
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 11
+  host_score: 11
+  density: 23.76
+  words: 463
+  tiers:
+    agentic: 4
+    core: 7
+    model: 0
+  ambiguous: 5
+  top_terms:
+    agent: 5
+    AI: 4
+    foundation model: 3
+    prompts: 2
+    MCP: 1
+    fine-tune: 1
