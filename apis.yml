@@ -25,7 +25,7 @@ x-docs-hosting: vercel
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Training Data
 - Data
 - Evaluation
@@ -34,6 +34,7 @@ tags:
 - Research
 - Agents
 - MCP
+- A2A
 tags_raw:
 - Company
 - Artificial Intelligence
@@ -46,6 +47,8 @@ tags_raw:
 - Research
 - Agents
 - Model Context Protocol
+- Machine-Learning
+- A2A
 apis:
 - aid: afterquery:afterquery-experts-help-center-mcp
   name: AfterQuery Experts Help Center MCP
@@ -137,3 +140,10 @@ x-enrichment:
   status: enriched
   artifacts_added: 17
   pass: local-v3
+x-a2a:
+  verified: true
+  probed: '2026-09-26'
+  url: "https://docs.afterquery.com/.well-known/agent-card.json"
+  grade: "conformant"
+  protocol_version: "0.3"
+  control: 404
