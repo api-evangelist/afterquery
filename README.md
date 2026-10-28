@@ -64,20 +64,111 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AfterQuery is a San Francisco applied research lab that curates expert reasoning data for frontier
-foundation models — supervised fine-tuning sets, rubric- and verifier-based reinforcement-learning
-environments, tool-calling and computer-use environments, RLHF, deep research tasks, multimodal
-data, and custom evaluation suites — produced with a network of verified professionals in finance,
-healthcare, law and software engineering through its AfterQuery Experts contributor platform.
+AfterQuery is a San Francisco applied research lab that curates expert reasoning data for frontier foundation models - supervised fine-tuning sets, rubric- and verifier-based reinforcement-learning environments, tool-calling and computer-use environments, RLHF, deep research tasks, multimodal data, and custom evaluation suites - produced with a network of verified professionals in finance, healthcare, law and software engineering through its AfterQuery Experts contributor platform. It publishes the IDE-Bench, App-Bench, Market-Bench, FinanceArena and FinanceQA benchmarks and sells data and evaluation engagements directly to AI labs and enterprises. AfterQuery ships no public product API: its only machine-callable surface is an anonymous documentation MCP server on its help-centre host, alongside an A2A agent card, a published agent skill and two llms.txt files.
 
-**API surface.** AfterQuery publishes no product API: there is no developer portal, no OpenAPI, no
-GraphQL endpoint and no SDK on any package registry. The one machine-callable surface it serves is
-an anonymous read-only documentation MCP server on its help-centre host, alongside an A2A agent
-card, one published agent skill and two `llms.txt` files. Everything in this repository was probed
-on 2026-09-12 and each artifact records the URL and HTTP status it came from.
+**Areas:** Company · Artificial Intelligence · Machine Learning · Training Data · Data · Evaluation · Reinforcement Learning · Benchmarks · Research · Agents · MCP · A2A
 
-- Website: https://www.afterquery.com/
-- Documentation (AfterQuery Experts Help Center): https://docs.afterquery.com/
-- MCP endpoint: https://docs.afterquery.com/mcp
-- GitHub organization: https://github.com/AfterQuery
-- Secondary-market listing this record was harvested from: https://forgeglobal.com/afterquery_stock/
+## AfterQuery on APIs.io
+
+Everything profiled for AfterQuery is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/afterquery/](https://apis.io/providers/afterquery/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [AfterQuery Experts Help Center MCP](https://apis.io/apis/afterquery/afterquery-experts-help-center-mcp/) — A read-only Model Context Protocol server over the AfterQuery Experts Help Center, served anonymously from AfterQuery's documentation host. Three tools -…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [AfterQuery Experts Help Center MCP](https://apis.io/servers/afterquery/afterquery-experts-help-center-mcp/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Afterquery Authentication](https://apis.io/security/afterquery/afterquery-authentication/)
+- [Afterquery Domain Security](https://apis.io/security/afterquery/afterquery-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Afterquery Plans Pricing](https://apis.io/plans/afterquery/afterquery-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Afterquery Rate Limits](https://apis.io/rate-limits/afterquery/afterquery-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.afterquery.com/)
+- [Documentation](https://docs.afterquery.com/)
+- [Sign up](https://experts.afterquery.com/apply)
+- [Support](https://www.afterquery.com/contact)
+- [Blog](https://www.afterquery.com/blog)
+- [Terms of service](https://www.afterquery.com/terms)
+- [Privacy policy](https://www.afterquery.com/privacy)
+- [GitHub](https://github.com/AfterQuery)
+
+## API Evangelist rating
+
+**Kin Score 23.8** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 27.6 |
+
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | conformant |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/afterquery/](https://apis.io/providers/afterquery/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AfterQuery: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/afterquery/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
