@@ -90,20 +90,20 @@ Model Context Protocol servers that expose the API to agents.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Afterquery Authentication](https://apis.io/security/afterquery/afterquery-authentication/)
-- [Afterquery Domain Security](https://apis.io/security/afterquery/afterquery-domain-security/)
+- [AfterQuery Authentication](https://apis.io/security/afterquery/afterquery-authentication/)
+- [AfterQuery Domain Security](https://apis.io/security/afterquery/afterquery-domain-security/)
 
 #### Plans and pricing (1)
 
 Published plans, tiers and prices.
 
-- [Afterquery Plans Pricing](https://apis.io/plans/afterquery/afterquery-plans-pricing/)
+- [AfterQuery Plans Pricing](https://apis.io/plans/afterquery/afterquery-plans-pricing/)
 
 #### Rate limits (1)
 
 Published request limits.
 
-- [Afterquery Rate Limits](https://apis.io/rate-limits/afterquery/afterquery-rate-limits/)
+- [AfterQuery Rate Limits](https://apis.io/rate-limits/afterquery/afterquery-rate-limits/)
 
 ## Where to find this API
 
@@ -120,18 +120,18 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 23.8** — emerging · rubric 0.25.0 · scored 2026-10-23
+**Kin Score 24.4** — emerging · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
 | Discoverability | 75.0 |
 | Contract quality | 0.0 |
 | Contract governance | 18.2 |
-| Operational transparency | 2.6 |
+| Operational transparency | 4.8 |
 | Developer ergonomics | 35.7 |
-| Access clarity | 27.6 |
+| Access clarity | 33.0 |
 
-**Agent readiness 17.8** — agent-aware
+**Agent readiness 21.3** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -156,8 +156,12 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Agentic Commerce | — |
 | Pagination Ratio | na |
 | Operation Distinctiveness | na |
+| MCP Tool Quality | full |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | yes |
 
-**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 17.3** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/afterquery/](https://apis.io/providers/afterquery/).
 
